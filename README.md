@@ -15,29 +15,31 @@ Now you can run shell commands directly from MySQL:
 
 **Check CentOS Version:**   
 
-    `SELECT mysql_cmdshell('cat /etc/centos-release');`
+    SELECT mysql_cmdshell('cat /etc/centos-release');
     
 **Kernel Version:**    
 
-    `SELECT mysql_cmdshell('uname -r');`
+    SELECT mysql_cmdshell('uname -r');
     
 **System Architecture:**    
 
-    `SELECT mysql_cmdshell('uname -m');`
+    SELECT mysql_cmdshell('uname -m');
     
 **Hostname:**     
 
-    `SELECT mysql_cmdshell('hostname');`
+    SELECT mysql_cmdshell('hostname');
     
 **IP Address:**    
 
-    `SELECT mysql_cmdshell('ip addr show');`
+    SELECT mysql_cmdshell('ip addr show');
 
 **CPU Information:**
 
   `SELECT mysql_cmdshell('lscpu ');`
   
+  
   `SELECT mysql_cmdshell('lscpu | grep name');`
+  
   
   `SELECT mysql_cmdshell('lscpu | grep MHz');`
   
