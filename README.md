@@ -92,6 +92,7 @@ Now you can run shell commands directly from MySQL:
    `SELECT mysql_cmdshell('journalctl | grep error');`
 
 **SE Linux:** 
+
   `SELECT mysql_cmdshell('sestatus | grep "SELinux status"');`
   
   `SELECT mysql_cmdshell('sestatus | grep "Current mode"');`
