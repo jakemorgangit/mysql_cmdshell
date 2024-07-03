@@ -1,8 +1,8 @@
 **mysql_cmdshell Project**
 
 1) Clone repo
-2) Modify allow.list to include any additional shell commands not already listed (use with extreme caution!)
-3) Run deploy.sh
+2) Modify `allow.list` to include any additional shell commands not already listed (use with extreme caution!)
+3) Run `sudo deploy.sh`
 4) Launch a connection to MySQL / MariaDB and run the following commands:
    
    `DROP FUNCTION IF EXISTS mysql_cmdshell;`
