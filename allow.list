@@ -1,0 +1,35 @@
+cpu
+uname
+cat /etc/centos-release
+uptime
+lscpu | grep name
+lscpu | grep MHz
+lscpu | grep \"CPU(s):\"
+lscpu | grep \"On-line\"
+lscpu | grep \"Thread\"
+lscpu | grep \"Core(s) per socket\"
+lscpu | grep \"Socket(s):\"
+lscpu | grep \"NUMA node(s)\"
+lscpu | grep \"NUMA\"
+hostname
+crontab -l
+who -b
+sestatus | grep \"SELinux status\"
+sestatus | grep \"Current mode\"
+df -i
+free -m
+free -m | grep 'Mem:' | awk '{print $2}'
+free -m | grep 'Swap:' | awk '{print $2}'
+free -m | grep 'Mem:' | awk '{print $3}'
+free -m | grep 'Swap:' | awk '{print $3}'
+free -m | grep 'Mem:' | awk '{print $4}'
+free -m | grep 'Swap:' | awk '{print $4}'
+free -m | grep 'Mem:' | awk '{print $5}'
+free -m | grep 'Mem:' | awk '{print $6}'
+free -m | grep 'Mem:' | awk '{print $7}'
+ps aux
+dmesg | less
+uname -n
+journalctl | grep error
+echo Hello World
+NULL
