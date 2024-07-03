@@ -1,5 +1,8 @@
+lscpu
 cpu
 uname
+uname -r
+uname -m
 cat /etc/centos-release
 uptime
 lscpu | grep name
