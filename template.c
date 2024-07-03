@@ -1,3 +1,19 @@
+/*
+ * mysql_cmdshell
+ * A MySQL / MariDB alternative to SQL Server's xp_cmdshell (kinf of!)
+ * Author: Jake Morgan
+ * Date: 2024-07-03
+ *
+ * This program implements a MySQL User Defined Function (UDF) that allows
+ * executing shell commands from within MySQL queries. The list of allowable
+ * shell commands is injected into the program from an external wrapper bash
+ * script, which reads the commands from a file (allow.list) and includes
+ * them in the generated C source code.
+ */
+
+
+
+
 #include <mysql.h>
 #include <string.h>
 #include <stdlib.h>
