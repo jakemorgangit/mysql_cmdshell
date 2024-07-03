@@ -16,6 +16,8 @@ Now you can run shell commands directly from MySQL:
 **Check CentOS Version:**   
 
     SELECT mysql_cmdshell('cat /etc/centos-release');
+![image](https://github.com/jakemorgangit/mysql_cmdshell/assets/75304631/376d7ad3-45e7-4be3-b3a2-a4e0f3ad33b3)
+
     
 **Kernel Version:**    
 
