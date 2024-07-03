@@ -13,22 +13,28 @@ mysql_cmdshell Project
 Now you can run shell commands directly from MySQL:
 
 
-**Check CentOS Version:**       
+**Check CentOS Version:**   
+
     `SELECT mysql_cmdshell('cat /etc/centos-release');`
     
-**Kernel Version:**       
+**Kernel Version:**    
+
     `SELECT mysql_cmdshell('uname -r');`
     
 **System Architecture:**    
+
     `SELECT mysql_cmdshell('uname -m');`
     
 **Hostname:**     
+
     `SELECT mysql_cmdshell('hostname');`
     
 **IP Address:**    
+
     `SELECT mysql_cmdshell('ip addr show');`
 
 **CPU Information:**
+
   `SELECT mysql_cmdshell('lscpu ');`
   
   `SELECT mysql_cmdshell('lscpu | grep name');`
@@ -51,8 +57,10 @@ Now you can run shell commands directly from MySQL:
   
   `SELECT mysql_cmdshell('lscpu | grep "NUMA"');`
 
-**Memory Information:**    
+**Memory Information:**  
+
   `SELECT mysql_cmdshell('free -m');`
+  
   `SELECT mysql_cmdshell("free -m | grep 'Mem:' | awk '{print $2}'") as MemoryTotal;`
   
   `SELECT mysql_cmdshell("free -m | grep 'Swap:' | awk '{print $2}'") as SwapTotal;`
@@ -72,12 +80,14 @@ Now you can run shell commands directly from MySQL:
   `SELECT mysql_cmdshell("free -m | grep 'Mem:' | awk '{print $7}'") as MemoryAvailable;`
 
 **System Start**
+
   `SELECT mysql_cmdshell('uptime');`
   
   `SELECT mysql_cmdshell('who -b');`
 
-**View System Logs:**    
-    SELECT mysql_cmdshell('journalctl | grep error');
+**View System Logs:**  
+
+   `SELECT mysql_cmdshell('journalctl | grep error');`
 
 **SE Linux:** 
   `SELECT mysql_cmdshell('sestatus | grep "SELinux status"');`
