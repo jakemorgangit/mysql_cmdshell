@@ -1,4 +1,4 @@
-*mysql_cmdshell Project*
+***mysql_cmdshell Project***
 
 1) Clone repo
 2) Modify allow.list to include any additional shell commands not already listed (use with extreme caution!)
